@@ -2,8 +2,9 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Generador de Códigos QR</title>
+    <title>QR LIBRE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/ICON.png" rel="icon" />
 
     <!-- Fuente -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -63,7 +64,6 @@
             padding: 14px;
             border-radius: 10px;
             border: none;
-            background: #00c6ff;
             background: linear-gradient(135deg, #00c6ff, #0072ff);
             color: white;
             font-size: 16px;
@@ -98,6 +98,34 @@
             font-size: 12px;
             opacity: 0.5;
         }
+
+        /* Botón contacto flotante */
+        .contacto-flotante {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #111;
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 12px 15px;
+            border-radius: 14px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            z-index: 9999;
+        }
+
+        .contacto-flotante a {
+            color: #00c6ff;
+            text-decoration: none;
+            font-size: 13px;
+            transition: 0.3s;
+        }
+
+        .contacto-flotante a:hover {
+            opacity: 0.8;
+            transform: translateX(-3px);
+        }
     </style>
 </head>
 <body>
@@ -117,8 +145,14 @@
     </div>
 
     <footer>
-        QR Generator · HTML + JS
+        QR Libre - Creado Por Capitan Vodka
     </footer>
+</div>
+
+<!-- Botón Contacto -->
+<div class="contacto-flotante">
+    <a href="mailto:Shuwaka@live.com">📧 Shuwaka@live.com</a>
+    <a href="https://wa.me/56982600659" target="_blank">💬 +56 9 8260 0659</a>
 </div>
 
 <script>
